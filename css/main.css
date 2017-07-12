@@ -1,0 +1,193 @@
+@import 'https://fonts.googleapis.com/css?family=Anton';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import url('https://fonts.googleapis.com/css?family=Lemonada');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  background: #151515;
+  z-index: 10;
+}
+
+.menu-open {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: -50.5px;
+  top: -50.5px;
+  border: 1px solid #858585;
+  background: #333;
+  transform: rotate(-45deg);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.menu-close {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: -50.5px;
+  top: -50.5px;
+  border: 1px solid #858585;
+  background: #333;
+  z-index: 110;
+  transform: scaleX(0) rotate(45deg);
+  cursor: pointer;
+}
+
+.menu-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #252525;
+  z-index: 100;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.ion-ios-arrow-right {
+  position: absolute;
+  color: #151515;
+  top: 5px;
+  left: 10px;
+  font-size: 36px;
+  z-index: 50;
+  cursor: pointer;
+}
+
+.ion-ios-arrow-left {
+  position: absolute;
+  color: #151515;
+  top: 5px;
+  right: 10px;
+  font-size: 36px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.paragraph {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 150px;
+  color: #858585;
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+
+.paragraph span {
+  font-family: 'Lobster';
+  font-size: 24px;
+}
+
+#currentNav ul {
+  position: absolute;
+  width: 316.876px;
+  height: 52px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+#currentNav ul li {
+  list-style: none;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+  color: #858585;
+  font-size: 50px;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+#currentNav ul li a {
+  text-decoration: none;
+  color: #858585;
+  transition: all 0.25s ease-out;
+}
+
+#currentNav ul li p {
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.first, .second, .third, .fourth {
+  transform: scaleX(0);
+}
+
+#currentNav ul li:nth-child(4) {
+  margin-right: 0px;
+}
+
+#currentNav ul li a:hover {
+  color: #666;
+}
+
+@keyframes open-menu {
+
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+
+}
+
+@keyframes getClose {
+
+  0% {
+    transform: scale(0) rotate(45deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(45deg);
+  }
+
+}
+
+@keyframes close-menu {
+
+  0% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+
+}
+
+@keyframes loseClose {
+
+  0% {
+    transform: scale(1) rotate(45deg);
+  }
+
+  100% {
+    transform: scale(0) rotate(45deg);
+  }
+
+}
+
+@keyframes scaleLeftNav {
+
+  0% {
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+}
