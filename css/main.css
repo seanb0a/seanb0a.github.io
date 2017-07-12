@@ -75,7 +75,7 @@ body {
   text-align: center;
   width: 100%;
   height: 100%;
-  margin-top: 150px;
+  margin-top: 5%;
   color: #858585;
   font-size: 20px;
   font-family: 'Roboto';
@@ -88,21 +88,20 @@ body {
 
 #currentNav ul {
   position: absolute;
-  width: 316.876px;
-  height: 52px;
+  width: auto;
   left: 50%;
   top: 50%;
-  transform: translateX(-50%);
+  transform-origin: center;
+  transform: translate(-50%, -50%);
 }
 
 #currentNav ul li {
   list-style: none;
-  text-align: center;
+  text-align: left;
   line-height: 50px;
-  float: left;
-  color: #858585;
   font-size: 50px;
-  margin-right: 50px;
+  float: none;
+  color: #858585;
   cursor: pointer;
   transition: all 0.25s ease-out;
 }
@@ -114,7 +113,6 @@ body {
 }
 
 #currentNav ul li p {
-  font-size: 12px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -122,12 +120,63 @@ body {
   transform: scaleX(0);
 }
 
-#currentNav ul li:nth-child(4) {
-  margin-right: 0px;
-}
-
 #currentNav ul li a:hover {
   color: #666;
+}
+
+#page1 .first, #page2 .fourth {
+  background: #151515;
+}
+
+table {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px dotted #1a1a1a;
+}
+
+table tr td form button {
+  position: absolute;
+  top: 0px;
+  cursor: pointer;
+  margin: 20px;
+  background: #111;
+  padding: 20px;
+  border: 1px solid #666;
+  color: #858585;
+  border-radius: 50px;
+  font: 16px 'Roboto';
+  transition: all 0.25s ease-out;
+}
+
+table tr td form button:hover {
+  background: #666;
+  color: #111;
+}
+
+footer {
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  color: #858585;
+  font-family: 'Roboto';
+  font-size: 16px;
+  transform: translate(-50%, -250%);
+}
+
+footer a {
+  color: #bfbfbf;
+  text-decoration: none;
+  border-bottom: 1px dotted #bfbfbf;
+  transition: all 0.25s ease-out;
+}
+
+footer a:hover {
+  color: #666;
+  border-bottom: 0px dotted #151515;
 }
 
 @keyframes open-menu {
@@ -178,16 +227,16 @@ body {
 
 }
 
-@keyframes scaleLeftNav {
+@keyframes scaleDown {
 
   0% {
-    transform-origin: left;
-    transform: scaleX(0);
+    transform-origin: top;
+    transform: scaleY(0);
   }
 
   100% {
-    transform-origin: left;
-    transform: scaleX(1);
+    transform-origin: top;
+    transform: scaleY(1);
   }
 
 }
