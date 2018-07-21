@@ -7,19 +7,30 @@ body {
 #navBar {
     position: fixed;
     top: 0px;
-    left: 0px;
+    left: 150px;
     width: 100%;
     height: 60px;
     background: #6EB575;
 }
 
+.logo {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 150px;
+    height: 80px;
+    background-image: url('Logo_v1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #navigation {
     position: relative;
-    left: 70px;
+    left: 0px;
 }
 
 #navigation li {
-    padding: 10px 10px 6px 10px;
+    padding: 10px 20px 6px 20px;
     position: relative;
     color: #282726;
     background-color: #6EB575;
