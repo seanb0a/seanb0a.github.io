@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 body {
-    background: #F1F7EE;
+    background-color: #F1F7EE;
+    background-image: url('pattern.png');
+    background-size: 32px 32px;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 #navBar {
@@ -13,8 +17,28 @@ body {
     background: #6EB575;
 }
 
-.logo {
+#content {
     position: absolute;
+    width: 70%;
+    height: 100%;
+    left: 15%;
+    top: 100px;
+    background: #eee;
+    z-index: -1;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #282726;
+}
+
+#content h1 {
+    text-align: center;
+}
+
+#content p {
+    padding-left: 25px;
+}
+
+.logo {
+    position: fixed;
     top: -20px;
     left: 0;
     width: 150px;
