@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:700');
+
+table tbody {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    border-spacing: 10px;
+}
+
+table th {
+    height: 10px;
+    cursor: pointer;
+}
+
+table td {
+    position: relative;
+    height: 130px;
+    width: 10%;
+    color: #282726;
+    background-color: #6EB575;
+    border-radius: 10px;
+}
+
+table td .type {
+    position: relative;
+    top: 39px;
+    left: -1px;
+    background-color: #282726;
+    color: #6EB575;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 24px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+table td .strainName {
+    position: relative;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px;
+    top: -50px;
+    left: -25px;
+}
